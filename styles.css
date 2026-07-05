@@ -1,6 +1,82 @@
+/* Universal Styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
+
+/* Header | Navbar Styling */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+background: #00AFB9;
+background: linear-gradient(197deg, rgba(0, 175, 185, 1) 0%, rgba(0, 175, 185, 1) 25%, rgba(253, 252, 220, 1) 100%);    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 60%;
+    font-size: 1.75rem;
+}
+
+.nav-links li a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.logo {
+    color: #595959;
+    font-family: "Kablammo", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "MORF" 0;
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2.25px;
+}
+
+/* Banner Section Styling */
+.banner {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://images.pexels.com/photos/35138560/pexels-photo-35138560.jpeg");
+    background-size: cover;
+}
+
+.banner .content {
+    text-align: center;
+    color: #fff;
+    max-width: 900px;
+}
+
+.banner .content h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.banner .content p {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}  
 
