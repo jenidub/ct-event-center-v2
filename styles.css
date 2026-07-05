@@ -11,13 +11,42 @@
         "wdth" 100;
 }
 
+/* Class Level Styling */
+.headerText {
+    font-family: "Asul", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    text-transform: uppercase;
+    color: #00afb9;
+    letter-spacing: -2px;
+    margin: 20px 10px;
+}
+
+.headerDesc {
+    margin: 20px 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00AFB9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
 /* Header | Navbar Styling */
 header {
     position: fixed;
     top: 0;
     width: 100%;
-background: #00AFB9;
-background: linear-gradient(197deg, rgba(0, 175, 185, 1) 0%, rgba(0, 175, 185, 1) 25%, rgba(253, 252, 220, 1) 100%);    padding: 10px 100px;
+    background: #00AFB9;
+    background: linear-gradient(197deg, rgba(0, 175, 185, 1) 0%, rgba(0, 175, 185, 1) 25%, rgba(253, 252, 220, 1) 100%);    padding: 10px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,6 +102,14 @@ background: linear-gradient(197deg, rgba(0, 175, 185, 1) 0%, rgba(0, 175, 185, 1
 .banner .content h1 {
     font-size: 4em;
     margin-bottom: 20px;
+    line-height: 1em;
+}
+
+.banner .content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    line-height: 1em;
+    font-style: italic;
 }
 
 .banner .content p {
@@ -80,3 +117,158 @@ background: linear-gradient(197deg, rgba(0, 175, 185, 1) 0%, rgba(0, 175, 185, 1
     margin-bottom: 10px;
 }  
 
+/* About Us Section Styling */
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col50 {
+    width: 50%;
+    padding: 40px;
+}
+
+.imgbx img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-section {
+    font-family: "Inter", sans-serif;
+    font-size: 1.3em;
+    text-wrap: wrap;
+    background-color: #F4F4F4;
+}
+
+.about-section p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Photo Gallery Divider Section Styling */
+.image-gallery-divider {
+    display: flex;
+    width: 100vw;
+    height: 200px;
+}
+
+.image-gallery-divider img {
+    width: 25%;
+    object-fit: cover;
+}
+
+/* Our Services Section Styling */
+.services-section {
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.services-content {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.services-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    background: white;
+}
+
+.services-card:hover {
+    transform: translateY(-10px);
+}
+
+.services-card h4 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/* Contact Us Section Styling */
+.contact-section {
+    padding: 50px 100px;
+    background-color: #f4f4f4;
+}
+
+.contact-content {
+    font-size: 1.25em;
+    margin-bottom: 30px;
+}
+
+.contact-text p {
+    line-height: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    width: 50%;
+    height: fit-content;
+    padding: 30px;
+    border: 1px solid #ccc;
+    font-size: 1.25em;
+    background-color: white;
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: lightgrey;
+}
+
+.contact-form textarea {
+    width: 100%;
+    height: 125px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: lightgrey;
+}
+
+/* Footer Section Styling */
+.footer-section {
+    background: #00AFB9;
+    background: linear-gradient(197deg, rgba(0, 175, 185, 1) 0%, rgba(0, 175, 185, 1) 25%, rgba(253, 252, 220, 1) 100%);    padding: 10px 100px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
+
+.footer-social-icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer-social-icon-container i {
+    font-size: 1.5em;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
