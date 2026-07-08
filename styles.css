@@ -115,7 +115,25 @@ header {
 .banner .content p {
     font-size: 1.5em;
     margin-bottom: 10px;
-}  
+}
+
+.shortbanner {
+    width: 100vw;
+    height: 40vh;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://images.pexels.com/photos/35736659/pexels-photo-35736659.jpeg");
+}
+
+.shortbanner h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    line-height: 1em;
+    color: white;
+}
 
 /* About Us Section Styling */
 .row {
@@ -126,6 +144,11 @@ header {
 .col50 {
     width: 50%;
     padding: 40px;
+}
+
+.col40 {
+    width: 40%;
+    padding: 40px 0px;
 }
 
 .imgbx img {
@@ -249,6 +272,12 @@ header {
     color: lightgrey;
 }
 
+.confirmation-message {
+    margin-top: 20px;
+    font-size: 1em;
+    color: green;
+}
+
 /* Footer Section Styling */
 .footer-section {
     background: #00AFB9;
@@ -272,3 +301,46 @@ header {
     color: #fff;
     transition: color 0.3s ease-in-out;
 }
+
+/* About Us - Our Team Section Styling */
+.long-info-card-section {
+    display: flex;
+    flex-direction: space-between;
+    padding: 0px 20px 20px 50px;
+    background-color: #f4f4f4;
+}
+
+.long-info-card-content {
+    text-align: left;
+    font-size: 1.25em;
+}
+
+.long-info-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.long-info-card:hover {
+    transform: translateY(-10px);
+}
+
+.long-info-card h4 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.long-info-card {
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    background: white;
+}
+

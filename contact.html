@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JeniDub Event Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Kablammo&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44f201c5a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Navbar Section -->
+    <header class="header sticky">
+        <a href="/index.html" class="logo">JBEC</a>
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/events.html">Calendar</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="shortbanner">
+        <div class="content">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="contact-content">
+            <h2>Get In Touch</h2>
+            <p>We'd love to hear from you! Please fill out the form below and we'll get back to you as soon as possible.</p>
+        </div>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button class="btn" type="submit" onclick="showConfirmation()">Send Message</button>
+            <!-- Include a confirmation message or redirect after submission to enhance user experience. -->
+            <p class="confirmation-message" style="display: none;">Thank you for your message! We'll get back to you soon.</p>
+        </form>
+    </section>
+
+    <script>
+        function showConfirmation() {
+            const confirmationMessage = document.querySelector('.confirmation-message');
+            confirmationMessage.style.display = 'block';
+            // Keep the message showing until the submission is complete or the user navigates away. You can also implement a timeout to hide the message after a few seconds if desired.
+            // Prevent reloading the page on form submission for demonstration purposes. In a real application, you would handle the form submission properly.
+            event.preventDefault(); // Prevent form submission for demonstration purposes
+            setTimeout(() => {
+                confirmationMessage.style.display = 'none';
+            }, 5000); // Hide after 5 seconds
+        }
+
+    </script>
+</body>
+</html>
