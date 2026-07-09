@@ -1,0 +1,147 @@
+/* Universal Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+/* Class Level Styling */
+.headerText {
+    font-family: "Asul", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    text-transform: uppercase;
+    color: #00afb9;
+    letter-spacing: -2px;
+    margin: 20px 10px;
+}
+
+.headerDesc {
+    margin: 20px 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00AFB9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col50 {
+    width: 50%;
+    padding: 40px;
+}
+
+.col40 {
+    width: 40%;
+    padding: 40px 0px;
+}
+
+.imgbx img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Header | Navbar Styling */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #00AFB9;
+    background: linear-gradient(197deg, rgba(0, 175, 185, 1) 0%, rgba(0, 175, 185, 1) 25%, rgba(253, 252, 220, 1) 100%);    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 60%;
+    font-size: 1.75rem;
+}
+
+.nav-links li a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.logo {
+    color: #595959;
+    font-family: "Kablammo", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "MORF" 0;
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2.25px;
+}
+
+/* Page Hero Section Banner Section Styling */
+.shortbanner {
+    width: 100vw;
+    height: 40vh;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://images.pexels.com/photos/35736659/pexels-photo-35736659.jpeg");
+}
+
+.shortbanner h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    line-height: 1em;
+    color: white;
+}
+
+/* Footer Section Styling */
+.footer-section {
+    background: #00AFB9;
+    background: linear-gradient(197deg, rgba(0, 175, 185, 1) 0%, rgba(0, 175, 185, 1) 25%, rgba(253, 252, 220, 1) 100%);    padding: 10px 100px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
+
+.footer-social-icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer-social-icon-container i {
+    font-size: 1.5em;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}

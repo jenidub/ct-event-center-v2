@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JeniDub Event Center</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Kablammo&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -30,10 +31,29 @@
         </div>
     </section>
 
+    <!-- Venue Map Embed -->
+    <div class="map-section">
+        <div class="map-section-content">
+            <h2 class="headerText">Visit Our Venue</h2>
+            <p>Use the map below to get directions to our venue by car and public transportation.</p>
+        </div>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3707.9205277214573!2d-122.42420592372252!3d37.77643931206349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580613cc89d4b%3A0xcf678083be8c496d!2sSFJAZZ!5e1!3m2!1sen!2sus!4v1783569516577!5m2!1sen!2sus" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+        </div>
+    </div>
+
     <!-- Contact Form Section -->
     <section class="contact-section">
         <div class="contact-content">
-            <h2>Get In Touch</h2>
+            <h2 class="headerText">Get In Touch</h2>
             <p>We'd love to hear from you! Please fill out the form below and we'll get back to you as soon as possible.</p>
         </div>
         <form class="contact-form">
@@ -46,6 +66,21 @@
         </form>
     </section>
 
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div>
+            <p>&copy; 2026 Design and Code by JeniDub via Coding Temple</p>
+        </div>
+        <div>
+            <div class="footer-social-icon-container">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for handling form submission -->
     <script>
         function showConfirmation() {
             const confirmationMessage = document.querySelector('.confirmation-message');
