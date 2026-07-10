@@ -1,23 +1,10 @@
-/* About Us Section Styling */
-.about-section {
-    font-family: "Inter", sans-serif;
-    font-size: 1.3em;
-    text-wrap: wrap;
-    background-color: #F4F4F4;
-}
-
-.about-section p {
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
-
-/* About Us - Our Team Section Styling */
+/* Services Section Styling */
 .services-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
 .services-content {
@@ -32,6 +19,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .services-card {
@@ -43,6 +31,7 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease-in-out;
     background: white;
+    text-align: center;
 }
 
 .services-card:hover {
@@ -53,4 +42,12 @@
     margin: 10px 0px;
     font-size: 1.2em;
     font-weight: 600;
+}
+
+.services-card h5 {
+    margin: 10px 0px;
+    font-size: 1em;
+    font-weight: 400;
+    color: #555;
+    font-style: italic;
 }
