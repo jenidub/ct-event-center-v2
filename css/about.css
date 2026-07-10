@@ -1,28 +1,16 @@
-/* Short Banner Section Styling */
-.shortbanner {
-    width: 100vw;
-    height: 40vh;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://images.pexels.com/photos/35736659/pexels-photo-35736659.jpeg");
-}
-
-.shortbanner h1 {
-    font-size: 4em;
-    margin-bottom: 20px;
-    line-height: 1em;
-    color: white;
-}
-
 /* About Us Section Styling */
 .about-section {
     font-family: "Inter", sans-serif;
-    font-size: 1.3em;
     text-wrap: wrap;
     background-color: #F4F4F4;
+    padding-left: 20px;
+}
+
+.about-section h2,
+.about-team-section h2 {
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+    font-size: 2em;
 }
 
 .about-section p {
@@ -30,44 +18,71 @@
     line-height: 1.5;
 }
 
-/* About Us - Our Team Section Styling */
-.long-info-card-section {
+.about-feature-image {
+    width: 100%;
+    height: 350px;
     display: flex;
-    flex-direction: space-between;
-    padding: 0px 20px 20px 50px;
-    background-color: #f4f4f4;
+    overflow: hidden;
 }
 
-.long-info-card-content {
-    text-align: left;
+/* About Us - Our Team Section Styling */
+.about-team-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    margin-top: 40px;
+}
+
+.about-team-section p {
+    margin-bottom: 20px;
+    padding: 10px 100px;
+}
+
+.team-card-content {
+    text-align: center;
     font-size: 1.25em;
 }
 
-.long-info-card-container {
+.team-card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    margin-left: 30px;
+    margin-bottom: 30px;
 }
 
-.long-info-card:hover {
-    transform: translateY(-10px);
-}
-
-.long-info-card h4 {
-    margin-top: 10px;
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
-.long-info-card {
-    width: 200px;
+.team-card {
+    width: 250px;
     margin: 20px;
-    padding: 20px;
+    padding: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease-in-out;
     background: white;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-card h4 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.team-card p {
+    font-size: 1em;
+    color: #666;
+    margin-top: 10px;
+    padding: 0px;
 }

@@ -56,7 +56,7 @@
 }
 
 .imgbx img {
-    height: 100%;
+    height: 375px;
     width: 100%;
     object-fit: cover;
 }
