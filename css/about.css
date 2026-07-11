@@ -15,6 +15,7 @@
 
 .about-section p {
     margin-bottom: 20px;
+    font-size: 1.25em;
     line-height: 1.5;
 }
 
@@ -36,8 +37,10 @@
 }
 
 .about-team-section p {
+    font-size: 1.25em;
     margin-bottom: 20px;
     padding: 10px 100px;
+    text-align: center;
 }
 
 .team-card-content {
@@ -54,7 +57,7 @@
 }
 
 .team-card {
-    width: 250px;
+    width: 300px;
     margin: 20px;
     padding: 0px;
 
@@ -78,11 +81,20 @@
     margin-top: 10px;
     font-size: 1.2em;
     font-weight: 600;
+    text-transform: uppercase;
+}
+
+.team-card h5 {
+    margin-top: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    color: #00AFB9;
+    font-style: italic;
 }
 
 .team-card p {
     font-size: 1em;
     color: #666;
     margin-top: 10px;
-    padding: 0px;
+    padding: 10px;
 }
