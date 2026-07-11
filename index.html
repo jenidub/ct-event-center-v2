@@ -31,7 +31,7 @@
             <h1>JeniDub Event Center</h1>
             <h2>Northern California's Home of Innovation & Joy</h2>
             <p>Come by to see future forward innovations, groundbreaking artists, and the premier conventions in the region!</p>
-            <a href="#" class="btn">Check Out Our Events</a>
+            <a href="/events.html" class="btn">Check Out Our Events</a>
         </div>
     </section>
 
@@ -45,7 +45,7 @@
             </div>
             <div class="col50">
                 <div class="imgbx">
-                    <img src="https://images.pexels.com/photos/35736659/pexels-photo-35736659.jpeg" alt="#">
+                    <img src="./assets/home-page-featured-image.jpg" alt="Brightly lit arcade games and ticket stations - Photo by Bert Seinstra from Pexels: https://www.pexels.com/photo/colorful-arcade-machines-lit-up-at-night-35736659/">
                 </div>
             </div>
         </div>
@@ -145,7 +145,8 @@
                     <input type="text" placeholder="Name">
                     <input type="email" placeholder="Email">
                     <textarea placeholder="Message"></textarea>
-                    <button class="btn" type="submit">Send Form</button>
+                    <button class="btn" type="submit" onclick="showConfirmation()">Send Message</button>
+                    <p class="confirmation-message" style="display: none;">Thank you for your message! We'll get back to you soon.</p>
                 </form>
             </div>
         </div>
@@ -164,5 +165,19 @@
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript for handling form submission -->
+    <script>
+        function showConfirmation() {
+            const confirmationMessage = document.querySelector('.confirmation-message');
+            confirmationMessage.style.display = 'block';
+            // Keep the message showing until the submission is complete or the user navigates away. You can also implement a timeout to hide the message after a few seconds if desired.
+            // Prevent reloading the page on form submission for demonstration purposes. In a real application, you would handle the form submission properly.
+            event.preventDefault(); // Prevent form submission for demonstration purposes
+            setTimeout(() => {
+                confirmationMessage.style.display = 'none';
+            }, 5000); // Hide after 5 seconds
+        }
+    </script>
 </body>
 </html>
