@@ -65,9 +65,10 @@
 header {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     background: #00AFB9;
-    background: linear-gradient(197deg, rgba(0, 175, 185, 1) 0%, rgba(0, 175, 185, 1) 25%, rgba(253, 252, 220, 1) 100%);    padding: 10px 100px;
+    background: linear-gradient(197deg, rgba(0, 175, 185, 1) 0%, rgba(0, 175, 185, 1) 25%, rgba(253, 252, 220, 1) 100%);
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,6 +88,10 @@ header {
     font-size: 1.5rem;
     font-weight: 700;
     text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
 }
 
 .logo {
@@ -125,7 +130,8 @@ header {
 /* Footer Section Styling */
 .footer-section {
     background: #00AFB9;
-    background: linear-gradient(197deg, rgba(0, 175, 185, 1) 0%, rgba(0, 175, 185, 1) 25%, rgba(253, 252, 220, 1) 100%);    padding: 10px 100px;
+    background: linear-gradient(197deg, rgba(0, 175, 185, 1) 0%, rgba(0, 175, 185, 1) 25%, rgba(253, 252, 220, 1) 100%);
+    padding: 10px 100px;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -144,4 +150,42 @@ header {
     font-size: 1.5em;
     color: #fff;
     transition: color 0.3s ease-in-out;
+}
+
+/* MOBILE DEVICE STYLING */
+@media (max-width: 1024px) {
+    .header {
+        width: 100%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #00AFB9;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .imgbx img {
+        height: 250px;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-top: 30px;
+    }
 }
