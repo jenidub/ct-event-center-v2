@@ -13,9 +13,14 @@
 </head>
 <body>
     <!-- Header Navbar Section -->
-    <header class="header sticky">
+    <header class="header">
         <a href="/index.html" class="logo">JDEC</a>
-        <ul class="nav-links">
+
+        <!-- Hamburger Menu for Mobile -->
+        <i class="fa-solid fa-bars menu-toggle" onClick="toggleMenu()"></i>
+        
+        <!-- Navbar Menu -->
+        <ul class="nav-links" id="nav-links">
             <li><a href="/index.html">Home</a></li>
             <li><a href="/about.html">About</a></li>
             <li><a href="/services.html">Services</a></li>
@@ -31,18 +36,16 @@
         </div>
     </section>
 
-    <!-- Introduction Section -->
+    <!-- About JeniDub Section -->
     <section class="about-section">
-        <div class="row">
-            <div class="about-content col50">
-                <h2 class="headerText">About Us</h2>
-                <p>The JeniDub Event Center is a premier venue for hosting innovative events and conferences in the heart of Northern California. We were founded in 2025 with the mission to create memorable moments and bring people together for extraordinary experiences.</p>
-                <p>We look forward to partnering with the community to create and host amazing events that inspire and unite people to be together and experience the best of what our region has to offer.</p>
-            </div>
-            <div class="col50">
-                <div class="about-feature-image">
-                    <img src="./assets/about-feature-image.jpg" alt="Stunning view of the San Francisco skyline with iconic skyscrapers at dusk - Photo by Stephen Leonardi from Pexels: https://www.pexels.com/photo/san-francisco-skyline-at-dusk-with-skyscrapers-35076160/ ">
-                </div>
+        <div class="about-content">
+            <h2 class="headerText">About Us</h2>
+            <p>The JeniDub Event Center is a premier venue for hosting innovative events and conferences in the heart of Northern California. We were founded in 2025 with the mission to create memorable moments and bring people together for extraordinary experiences.</p>
+            <p>We look forward to partnering with the community to create and host amazing events that inspire and unite people to be together and experience the best of what our region has to offer.</p>
+        </div>
+        <div class="about-image">
+            <div class="imgbx">
+                <img src="./assets/about-feature-image.jpg" alt="Stunning view of the San Francisco skyline with iconic skyscrapers at dusk - Photo by Stephen Leonardi from Pexels: https://www.pexels.com/photo/san-francisco-skyline-at-dusk-with-skyscrapers-35076160/ ">
             </div>
         </div>
     </section>
