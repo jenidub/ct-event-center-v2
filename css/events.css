@@ -1,10 +1,14 @@
+body {
+    width: 100vw;
+}
+
 /* Events Section Styling */
 .events-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
 .events-content {
@@ -19,6 +23,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+    background-color: #f4f4f4;
 }
 
 /* Font Styling */
@@ -72,37 +77,157 @@
     font-weight: bold;
 }
 
-/* Event Table Styling */
-.events-table-section {
-    background-color: #f4f4f4;
+/* Event Table Styling - Desktop */
+.event-table-section {
+    background-color: white;
     padding: 20px;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.events-table {
+.event-table {
     border-collapse: collapse;
     width: 80%;
     margin: 10px auto 50px auto;
 }
 
-.events-table-header th {
+.event-table-header th {
     background-color: #00AFB9;
     color: white;
     font-weight: bold;
 }
 
-.events-table-event-listing {
+.event-table-event-listing {
     background-color: #f4f4f4;
 }
 
-.events-table th,
-.events-table td {
+.event-table th,
+.event-table td {
     border: 1px solid black;
     padding: 5px;
     text-wrap: wrap;
     text-align: center;
     min-width: 150px;
+}
+
+/* Event Card Styling - Mobile */
+.event-table-mobile {
+    display: none;
+}
+
+.event-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    background: white;
+    text-align: center;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+}
+
+.event-card h4 {
+    color: #00afb9;
+    margin: 10px 0px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.event-card h5 {
+    margin: 10px 0px;
+    font-size: 1em;
+    font-weight: 400;
+    color: #555;
+    font-style: italic;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    header {
+        width: 100%;
+    }  
+
+    .shortbanner {
+        height: 20vh;
+    }
+
+    .shortbanner .content {
+        width: 90%;
+        margin: 50px auto 10px auto;
+    }
+
+    .shortbanner .content h1 {
+        font-size: 2.5em;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .shortbanner-description {
+        display: none;
+    }
+
+    .events-section {
+        padding: 25px 50px;
+    }
+
+    .events-content {
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .event-table {
+        display: none;
+    }
+
+    .event-table-mobile {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .events-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px 20px;
+        margin: 0;
+    }
+
+    .events-section p {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .pricing table table, tbody, tr, td {
+      display: block;
+      width: 100%;
+    }
+
+    .pricing-header {
+        display: none;
+    }
+
+    .event-table-mobile {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
 }

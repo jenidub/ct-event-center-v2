@@ -137,6 +137,14 @@
         margin: 0 auto;
         padding: 10px;
     }
+
+    .team-card p {
+        display: none;
+    }
+
+    .team-card h5 {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 768px) {

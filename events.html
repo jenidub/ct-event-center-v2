@@ -13,9 +13,14 @@
 </head>
 <body>
     <!-- Header Navbar Section -->
-    <header class="header sticky">
+    <header class="header">
         <a href="/index.html" class="logo">JDEC</a>
-        <ul class="nav-links">
+
+        <!-- Hamburger Menu for Mobile -->
+        <i class="fa-solid fa-bars" id="menu-toggle" onClick="toggleMenu()"></i>
+        
+        <!-- Navbar Menu -->
+        <ul class="nav-links" id="nav-links">
             <li><a href="/index.html">Home</a></li>
             <li><a href="/about.html">About</a></li>
             <li><a href="/services.html">Services</a></li>
@@ -44,19 +49,15 @@
         <h2 class="headerText">Ticket Pricing</h2>
         <p>Here are the available ticket options for the public concerts & showcase events at JDEC:</p>
         <div class="pricing-table">
-            <div class="pricing-row">
-                <div class="pricing-cell-1 pricing-header">Type</div>
-                <div class="pricing-cell-2 pricing-header">Price</div>
-            </div>
-            <div class="pricing-row">
+            <div class="pricing-row pricing-col">
                 <div class="pricing-cell-1">Adult</div>
                 <div class="pricing-cell-2">$25</div>
             </div>
-            <div class="pricing-row">
+            <div class="pricing-row pricing-col">
                 <div class="pricing-cell-1">Child</div>
                 <div class="pricing-cell-2">$15</div>
             </div>
-            <div class="pricing-row">
+            <div class="pricing-row pricing-col">
                 <div class="pricing-cell-1">Senior</div>
                 <div class="pricing-cell-2">$20</div>
             </div>
@@ -71,52 +72,75 @@
         </div>
     </section>
 
-    <!-- Calendar of Events Section - 2 Views: Card View, List View -->
+    <!-- Calendar of Events Section - 2 Views: Card View (Mobile), Table View (Desktop) -->
     <div class="event-table-section">
         <h2 class="headerText">Schedule of Events</h2>
         <p>Check out our upcoming events and don't miss out on the amazing performances!</p>
-        <table class="events-table">
-            <tr class="events-table-header">
+        <table class="event-table">
+            <tr class="event-table-header">
                 <th>Event Name</th>
-                <th>Featured Artists</th>
+                <th class="event-info-desktop">Featured Artists</th>
                 <th>Date</th>
                 <th>Time</th>
                 <th>Venue</th>
-                <th>Ticketed?</th>
+                <th class="event-info-desktop">Ticketed?</th>
             </tr>
-            <tr class="events-table-event-listing">
+            <tr class="event-table-listing">
                 <td>Spring Music Showcase</td>
-                <td>JDEC All Stars</td>
+                <td class="event-info-desktop">JDEC All Stars</td>
                 <td>March 15, 2027</td>
                 <td>7:00 PM</td>
                 <td>Artist Studio</td>
-                <td>Yes</td>
+                <td class="event-info-desktop">Yes</td>
             </tr>
-            <tr class="events-table-event-listing">
+            <tr class="event-table-listing">
                 <td>Summer Concert & Food Truck Festival</td>
-                <td>War & Treaty, The Choir Room, Fred Hammond</td>
+                <td class="event-info-desktop">War & Treaty, The Choir Room, Fred Hammond</td>
                 <td>June 20, 2027</td>
                 <td>6:30 PM</td>
                 <td>Outdoor Stage</td>
-                <td>No</td>
+                <td class="event-info-desktop">No</td>
             </tr>
-            <tr class="events-table-event-listing">
+            <tr class="event-table-listing">
                 <td>Fall Music Showcase</td>
-                <td>JDEC All Stars</td>
+                <td class="event-info-desktop">JDEC All Stars</td>
                 <td>September 10, 2027</td>
                 <td>7:00 PM</td>
                 <td>Artist Studio</td>
-                <td>Yes</td>
+                <td class="event-info-desktop">Yes</td>
             </tr>
-            <tr class="events-table-event-listing">
+            <tr class="event-table-listing">
                 <td>Winter Gala</td>
-                <td>Guest Artists</td>
+                <td class="event-info-desktop">Guest Artists</td>
                 <td>December 5, 2027</td>
                 <td>8:00 PM</td>
                 <td>Main Auditorium</td>
-                <td>Yes</td>
+                <td class="event-info-desktop">Yes</td>
             </tr>
         </table>
+        <div class="event-table-mobile">
+            <div class="event-card imgbx">
+                <img src="#" alt="#">
+                <h4>Spring Music Showcase</h4>
+                <h5>March 15, 2027 at 7:00 PM</h5>
+                <em>Artist Studio</em>
+                <p>Tickets Required? <span>Yes</span></p>
+            </div>
+            <div class="event-card imgbx">
+                <img src="#" alt="#">
+                <h4>Summer Concert & Food Truck Festival</h4>
+                <h5>June 20, 2027 at 6:30 PM</h5>
+                <em>Outdoor Stage</em>
+                <p>Tickets Required? <span>No</span></p>
+            </div>
+            <div class="event-card imgbx">
+                <img src="#" alt="#">
+                <h4>Fall Music Showcase</h4>
+                <h5>September 10, 2027 at 7:00 PM</h5>
+                <em>Artist Studio</em>
+                <p>Tickets Required? <span>Yes</span></p>
+            </div>
+        </div>
     </div>
 
 
@@ -133,5 +157,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript for Hamburger Menu Trigger -->
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
