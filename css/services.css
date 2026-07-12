@@ -39,9 +39,10 @@
 }
 
 .services-card h4 {
+    color: #00afb9;
     margin: 10px 0px;
     font-size: 1.2em;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .services-card h5 {
@@ -50,4 +51,58 @@
     font-weight: 400;
     color: #555;
     font-style: italic;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    header {
+        width: 100%;
+    }  
+
+    .shortbanner {
+        height: 20vh;
+    }
+
+    .shortbanner .content {
+        width: 90%;
+        margin: 50px auto 10px auto;
+    }
+
+    .shortbanner .content h1 {
+        font-size: 2.5em;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .shortbanner-description {
+        display: none;
+    }
+
+    .services-section {
+        padding: 25px 50px;
+    }
+
+    .services-content,
+    .services-image {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px 20px;
+        margin: 0;
+    }
+
+    .services-section p {
+        width: 100%;
+        padding: 10px 20px;
+    }
 }
