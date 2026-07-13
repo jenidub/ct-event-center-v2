@@ -33,6 +33,10 @@
     border: none;
 }
 
+.map-container-mobile-phone {
+    display: none;
+}
+
 /* Contact Us - Form Section Styling */
 .contact-section {
     background-color: white;
@@ -82,4 +86,77 @@
     margin-top: 20px;
     font-size: 1em;
     color: green;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    header {
+        width: 100%;
+    }  
+
+    .shortbanner {
+        height: 20vh;
+    }
+
+    .shortbanner .content {
+        width: 90%;
+        margin: 50px auto 10px auto;
+    }
+
+    .shortbanner .content h1 {
+        font-size: 2.5em;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .shortbanner-description {
+        display: none;
+    }
+
+    .map-section-content {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .map-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px 20px;
+        margin: 0;
+    }
+
+    .map-section p {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .map-container-desktop {
+        display: none;
+    }
+
+    .map-container-mobile-phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .map-container-mobile-phone .btn{
+        margin-bottom: 20px;
+    }
+
+    .contact-section {
+        padding: 10px 30px;
+    }
+
+    .contact-form {
+        border: none;
+        padding: 10px 20px;
+    }
+
 }

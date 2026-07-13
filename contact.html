@@ -13,9 +13,14 @@
 </head>
 <body>
     <!-- Header Navbar Section -->
-    <header class="header sticky">
+    <header class="header">
         <a href="/index.html" class="logo">JDEC</a>
-        <ul class="nav-links">
+
+        <!-- Hamburger Menu for Mobile -->
+        <i class="fa-solid fa-bars" id="menu-toggle" onClick="toggleMenu()"></i>
+        
+        <!-- Navbar Menu -->
+        <ul class="nav-links" id="nav-links">
             <li><a href="/index.html">Home</a></li>
             <li><a href="/about.html">About</a></li>
             <li><a href="/services.html">Services</a></li>
@@ -35,18 +40,22 @@
     <div class="map-section">
         <div class="map-section-content">
             <h2 class="headerText">Visit Our Venue</h2>
-            <p>Use the map below to get directions to our venue by car and public transportation.</p>
+            <p>Follow the guidance below for directions to our venue by car and public transportation.</p>
         </div>
-        <div class="map-container">
+        <div class="map-container-desktop">
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3707.9205277214573!2d-122.42420592372252!3d37.77643931206349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580613cc89d4b%3A0xcf678083be8c496d!2sSFJAZZ!5e1!3m2!1sen!2sus!4v1783569516577!5m2!1sen!2sus" 
                 width="600" 
-                height="450" 
+                height="450"
                 style="border:0;" 
                 allowfullscreen="" 
                 loading="lazy" 
                 referrerpolicy="strict-origin-when-cross-origin">
             </iframe>
+        </div>
+        <div class="map-container-mobile-phone">
+            <p>Click the button below to open the address in your phone maps app</p>
+            <a href="#" target="_blank" class="btn">View in Maps</a>
         </div>
     </div>
 
@@ -90,6 +99,11 @@
             setTimeout(() => {
                 confirmationMessage.style.display = 'none';
             }, 5000); // Hide after 5 seconds
+        }
+
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
         }
     </script>
 </body>
