@@ -172,6 +172,11 @@
     color: lightgrey;
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background-color: rgb(255, 255, 164);
+}
+
 .confirmation-message {
     margin-top: 20px;
     font-size: .75em;

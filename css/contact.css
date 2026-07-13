@@ -76,6 +76,11 @@
     color: lightgrey;
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background-color: rgb(255, 255, 164);
+}
+
 .contact-form textarea {
     width: 100%;
     height: 125px;
