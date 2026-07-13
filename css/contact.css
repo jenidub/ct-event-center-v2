@@ -12,6 +12,11 @@
     background-color: #f4f4f4;
 }
 
+.map-section-content p,
+.contact-section p {
+    font-size: 1.25em;
+}
+
 /* Contact Us - Map Styling */
 .map-section {
     display: flex;

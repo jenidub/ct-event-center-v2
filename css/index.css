@@ -75,6 +75,10 @@
     font-weight: 600;
 }
 
+#next-event-title {
+    font-size: 1.5em;
+}
+
 /* Our Services Section Styling */
 .services-section {
     padding: 50px;
@@ -102,6 +106,7 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease-in-out;
     background: white;
+    text-align: center;
 }
 
 .services-card:hover {
@@ -219,8 +224,13 @@
         padding: 10px;
     }
 
+    .services-card-container {
+        justify-content: center;
+        align-items: center;
+    }
+
     .services-content {
-        text-align: left;
+        text-align: center;
     }
 
     .next-event-section {
@@ -248,5 +258,6 @@
         width: 100%;
         padding: 10px 20px;
         margin: 0;
+        text-align: center;
     }
 }
