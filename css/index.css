@@ -182,7 +182,11 @@
 @media (max-width: 1024px) {
     header {
         width: 100%;
-    }    
+    } 
+
+    #myBtn .back-to-top-text {
+        display: none;
+    }
 
     .image-gallery-divider {
         display: none;

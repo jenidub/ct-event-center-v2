@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JeniDub Event Center</title>
+    <link rel="icon" type="image/x-icon" href="./assets/ticket-solid-full.svg">
+
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Kablammo&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/44f201c5a9.js" crossorigin="anonymous"></script></head>
+    <script src="https://kit.fontawesome.com/44f201c5a9.js" crossorigin="anonymous"></script>
+</head>
+
 <body>
+    <!-- Back to Top Button -->
+    <a href="#top" class="back-to-top" id="myBtn">
+        <div class="back-to-top-content">
+            <p class="back-to-top-text">Back to Top</p>
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </a>
 
     <!-- Header Navbar Section -->
     <header class="header">
@@ -163,6 +174,8 @@
 
     <!-- JavaScript for handling form submission -->
     <script>
+        let mybutton = document.getElementById("myBtn");
+
         function showConfirmation() {
             const confirmationMessage = document.querySelector('.confirmation-message');
             confirmationMessage.style.display = 'block';
@@ -177,6 +190,23 @@
         function toggleMenu() {
             const navLinks = document.getElementById('nav-links');
             navLinks.classList.toggle('active');
+        }
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     </script>
 </body>

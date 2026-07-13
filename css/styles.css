@@ -69,6 +69,42 @@ p {
     text-transform: uppercase;
 }
 
+/* Back to Top Button Styling */
+.back-to-top-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.back-to-top-content p {
+    margin-right: 10px;
+}
+
+#myBtn {
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    background-color: #00AFB9;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid white;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
 /* Header | Navbar Styling */
 header {
     position: fixed;
