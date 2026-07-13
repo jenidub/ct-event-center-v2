@@ -2,6 +2,23 @@ body {
     width: 100vw;
 }
 
+/* Font Styling */
+.events-content h2,
+.ticket-pricing-section h2,
+.event-table-section h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.events-content p,
+.ticket-pricing-section p,
+.event-table-section p {
+    font-size: 1.25em;
+    text-align: center;
+    padding: 0 50px 10px 50px;
+}
+
 /* Events Section Styling */
 .events-section {
     display: flex;
@@ -24,23 +41,6 @@ body {
     justify-content: center;
     padding: 20px;
     background-color: #f4f4f4;
-}
-
-/* Font Styling */
-.events-content h2,
-.ticket-pricing-section h2,
-.event-table-section h2 {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.events-content p,
-.ticket-pricing-section p,
-.event-table-section p {
-    font-size: 1.25em;
-    text-align: center;
-    padding: 0 50px 10px 50px;
 }
 
 /* Ticket Pricing Table Styling */
@@ -88,10 +88,14 @@ body {
     align-items: center;
 }
 
+.event-table-section .btn {
+    margin-bottom: 20px;
+}
+
 .event-table {
     border-collapse: collapse;
     width: 80%;
-    margin: 10px auto 50px auto;
+    margin: 10px auto 30px auto;
 }
 
 .event-table-header th {
@@ -194,6 +198,27 @@ body {
         justify-content: center;
         align-items: center;
         margin-bottom: 20px;
+    }
+
+    .event-card h4 {
+        color: #00afb9;
+        margin: 10px 0px;
+        font-size: 1.25em;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .event-card h5 {
+        margin: 10px 0px;
+        font-size: 1.2em;
+        font-weight: 400;
+        color: #555;
+        font-style: italic;
+    }
+
+    .event-card p {
+        font-size: 1.1em;
+        padding: 0 25px;
     }
 }
 

@@ -105,4 +105,8 @@
         width: 100%;
         padding: 10px 20px;
     }
+
+    .services-card {
+        padding: 10px 0px;
+    }
 }
