@@ -233,3 +233,9 @@ header {
         margin-top: 10px;
     }
 }
+
+@media (max-width: 768px) {
+    #myBtn .back-to-top-text {
+        display: none;
+    }
+}
