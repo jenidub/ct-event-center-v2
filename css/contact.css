@@ -13,7 +13,8 @@
 }
 
 .map-section-content p,
-.contact-section p {
+.contact-section p,
+.map-container-mobile-phone p {
     font-size: 1.25em;
 }
 
